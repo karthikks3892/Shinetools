@@ -4,12 +4,15 @@ import { AppComponent } from './app.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule,MatListModule, MatSidenavModule,MatButtonModule} from '@angular/material';
+import { CoursesComponent } from './courses/courses.component';
+import { ListcoursesService } from './listcourses.service';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,7 @@ import {MatIconModule,MatListModule, MatSidenavModule,MatButtonModule} from '@an
     
 
   ],
-  providers: [],
+  providers: [ListcoursesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
