@@ -6,13 +6,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule,MatListModule, MatSidenavModule,MatButtonModule} from '@angular/material';
 import { CoursesComponent } from './courses/courses.component';
 import { ListcoursesService } from './listcourses.service';
+import { FavoriteComponent } from './favorite/favorite.component';
+import { PanelComponent } from './panel/panel.component';
+import { InputFormatDirective } from './input-format.directive';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    FavoriteComponent,
+    PanelComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
