@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import { AppComponent } from './app.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,6 +33,21 @@ import { InputFormatDirective } from './input-format.directive';
 
   ],
   providers: [ListcoursesService],
+=======
+
+
+import { AppComponent } from './app.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+>>>>>>> 2cc763364c5899f5550a157a1a9d5070ea813ab3
   bootstrap: [AppComponent]
 })
 export class AppModule { }
