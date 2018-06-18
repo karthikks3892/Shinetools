@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
 import { AppComponent } from './app.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule,MatListModule, MatSidenavModule,MatButtonModule} from '@angular/material';
 import { CoursesComponent } from './courses/courses.component';
 import { ListcoursesService } from './listcourses.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
-import { InputFormatDirective } from './input-format.directive';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
+import { DataRendererComponent } from './data-renderer/data-renderer.component';
+import { ValuesService } from './values.service';
+import { appRouting } from './app.router';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -19,35 +20,18 @@ import { InputFormatDirective } from './input-format.directive';
     CoursesComponent,
     FavoriteComponent,
     PanelComponent,
-    InputFormatDirective
+    ContactFormComponent,
+    DataRendererComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatSidenavModule,
-    MatButtonModule
+    FormsModule,
+    appRouting
     
 
   ],
-  providers: [ListcoursesService],
-=======
-
-
-import { AppComponent } from './app.component';
-
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
->>>>>>> 2cc763364c5899f5550a157a1a9d5070ea813ab3
+  providers: [ListcoursesService,ValuesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
